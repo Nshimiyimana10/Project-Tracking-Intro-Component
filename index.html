@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project Tracking Intro Component</title>
+</head>
+<body>
+<header>
+    <nav class="flex relative">
+        <div class="flex justify-between space-x-80">
+            <img class="absolute left-5 top-6 md: ml-20" src="/images/logo.svg" alt="company logo">
+            <img id="hamburger" class=" absolute top-7 right-5 md:hidden items-end" src="/images/icon-hamburger.svg" alt="hamburger menu">
+        </div>
+        
+        <div id="menu" class="hidden md:flex space-x-5 absolute right-20 top-5">
+            <a class="text-sm" href="#">PRODUCT</a>
+            <a class="text-sm" href="#">FEATURES</a>
+            <a class="text-sm" href="#">PRICING</a>
+            <a class="text-sm" href="#">LOGIN</a>
+           
+        </div>
+    </nav>
+</header> 
+<main class="flex flex-col md:flex relative">
+    <div>
+     <img class="mt-24 md:absolute right-0 w-[600px] h-80" src="/images/illustration-devices.svg" alt="main image of the company">
+    </div>
+    <div class="flex flex-col gap-8 mt-20 ml-24 w-[350px] h-[400px]">
+        <div class="flex space-x-9">
+            <button class="bg-blue-950 text-white rounded-full w-12 h-7">New</button>
+            <p class="uppercase font-light text-sm text-gray-400">Monograph Dashboard</p>
+        </div>
+        <div class="flex flex-col space-y-5 bg-[hsl(230, 29%, 20%)]">
+            <h1 class="text-4xl uppercase text-blue-950 md:text-2xl ">Powerful insights<br> into your team</h1>
+            <p class="text-blue-900 leading-4 text-xl md:text-[10px]"> Project planning and time tracking <br>
+            for agile teams</p>
+        </div>
+        <div class="flex space-x-5">
+            <button class="bg-red-500 text-white rounded p-2">Schedule a demo</button>
+            <p class="uppercase text-gray-400 text-sm mt-3 md:text-xs">to see a live preview</p>
+        </div>
+    </div>
+</main>
+<script src="index.js">
+
+</script>
+</body>
+</html> 
